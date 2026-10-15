@@ -89,7 +89,7 @@ body.intro-active { overflow:hidden; }
         <div class="scratch-surface" id="scratchSurface">
           <div class="scratch-under">
             <div class="sub">Save the date</div>
-            <div class="date">30th November – 2nd December, 2026</div>
+            <div class="date">5th December, 2026</div>
             <div class="sub">We can't wait to celebrate with you</div>
           </div>
           <canvas id="scratchCanvas" aria-label="Scratch this card to reveal the date"></canvas>
@@ -101,29 +101,12 @@ body.intro-active { overflow:hidden; }
         <div class="count-unit"><strong id="minutes">—</strong><span>Minutes</span></div>
         <div class="count-unit"><strong id="seconds">—</strong><span>Seconds</span></div>
       </div>
-      <p class="count-note" id="countNote">Counting down to 2 December 2026</p>
+      <p class="count-note" id="countNote">Counting down to 5 December 2026</p>
       <div class="petals" data-colors="#d7a65b,#e9c981,#fff0cc,#b7a46b"></div>
     </section>
     <section class="page" aria-label="Invitation page 2">
       <video class="invite-video" src="2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Invitation design 2"></video>
       <div class="petals" data-colors="#dce7f8,#b7c9e5,#f4f5ff,#9eafd0"></div>
-    </section>
-    <section class="page" aria-label="Invitation page 3">
-      <video class="invite-video" src="3.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Invitation design 3"></video>
-      <div class="petals" data-colors="#f4a0b7,#ffcf4a,#f36d9a,#f9e6b0"></div>
-    </section>
-    <section class="page" aria-label="Invitation page 4">
-      <video class="invite-video" src="4.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Invitation design 4"></video>
-      <div class="petals" data-colors="#ef9b77,#f4d9a2,#d6a35e,#fff0c8"></div>
-    </section>
-    <section class="page" aria-label="Invitation page 5">
-      <video class="invite-video" src="5.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Invitation design 5"></video>
-      <div class="petals" data-colors="#d7b77e,#f3e2bf,#c88d68,#fff4da"></div>
-    </section>
-    
-    <section class="page" aria-label="Invitation page 6">
-      <video class="invite-video" src="6.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Invitation design 6"></video>
-      <div class="petals" data-colors="#d7a65b,#e9c981,#fff0cc,#b7a46b"></div>
     </section>
 
     <section class="page" id="puneet-sukanya-page" aria-label="Puneet and Sukanya video page">
@@ -132,13 +115,6 @@ body.intro-active { overflow:hidden; }
 <section class="map-page" aria-label="Venue and map">
       <div class="eyebrow">We look forward to celebrating with you</div>
       <h1>Find the Venue</h1>
-      <div class="venue-block">
-        <p><strong>The Fern Residency Galaxy Mall</strong><br>Asansol, West Bengal, India</p>
-        <div class="map-frame">
-          <iframe title="Google Map to The Fern Residency Galaxy Mall, Asansol" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=The%20Fern%20Residency%20Galaxy%20Mall%2C%20Asansol%2C%20West%20Bengal%2C%20India&output=embed"></iframe>
-        </div>
-        <a class="map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=The%20Fern%20Residency%20Galaxy%20Mall%2C%20Asansol%2C%20West%20Bengal%2C%20India">Open directions in Google Maps ↗</a>
-      </div>
       <div class="venue-block">
         <p><strong>Flag's Banquet Andheri</strong><br>Kavi Ram Basakhetre Rd, Lokhandwala Complex,<br>Andheri West, Mumbai 400053</p>
         <div class="map-frame">
@@ -349,7 +325,7 @@ body.intro-active { overflow:hidden; }
   }
 
   // Wedding countdown: 2 December 2026 at midnight in the visitor's local time.
-  const target = new Date(2026, 11, 2, 0, 0, 0).getTime();
+  const target = new Date(2026, 11, 5, 0, 0, 0).getTime();
   function updateCountdown() {
     const left = Math.max(0, target - Date.now());
     const vals = {
